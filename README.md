@@ -1,3 +1,22 @@
+# 🛒 Proyecto Integrador - RetailPro por Maximiliano Fenaroli
+
+## 📝 Descripción del Proyecto y Problemática
+En muchos negocios de retail, la alta rotación de inventario y el volumen de ventas enmascaran problemas estructurales de rentabilidad. RetailPro aborda esta problemática mediante el modelado de datos, análisis de negocio (BI) y procesos ETL para optimizar la toma de decisiones comerciales.
+
+## 🛠️ Herramientas y Tecnologías Utilizadas
+- **Base de Datos:** Microsoft SQL Server (T-SQL)
+- **Visualización / Dashboard:** Power BI (Archivo ejecutable: `Fenaroli_Maximiliano_Checkpoint2.pbix`)
+- **Lenguaje:** SQL (DDL, DML, CTEs, Joins)
+
+## 📂 Archivos Principales del Repositorio
+- `m5_consultas_joins.sql`: Consultas de análisis exploratorio y uniones.
+- `Fenaroli_Maximiliano_Checkpoint2.pbix`: Dashboard interactivo con Zonas de Oro y KPIs.
+- `Pipeline_ETL_FENAROLI_MAXIMILIANO.pbix`: Archivo con el tratamiento de datos.
+
+---
+
+*(A partir de acá comienza la documentación técnica detallada por módulo)*
+
 Justificación Técnica - Pipeline ETL
 Tratamiento de valores nulos: se decide reemplazar los "null" dentro de las columnas con formato texto por "info pendiente" ya que eliminar estas filas implicaría perder transacciones de venta asociadas a estos clientes en la tabla Fact_Ventas
 Tramiento de valores nulos en columnas de número: se decide reemplazarlos por ceros para preservar el tipo de dato numérico (decimal/entero) y evitar transformar la columna a formato texto.
